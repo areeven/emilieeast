@@ -43,8 +43,8 @@ Navigation skapar jag med en meny som kommer fram vid tryck på en hamburgermeny
 sedan är i desktop-läge kommer menyn att ligga på toppen. För att göra en navigation skapar jag två filer till att börja
 med.
 
-- [RoutePath](./client/src/routes/RoutePath.ts) - Alla sökvägar som kommer existera på hemsidan
-- [Routing](./client/src/routes/Routing.tsx) - Alla sökvägar skapar länk till rätt sökväg samt rätt vy
+- [RoutePath](./frontend/src/routes/RoutePath.ts) - Alla sökvägar som kommer existera på hemsidan
+- [Routing](./frontend/src/routes/Routing.tsx) - Alla sökvägar skapar länk till rätt sökväg samt rätt vy
 
 Därefter börjar jag skapa min mapp för components
 
@@ -90,7 +90,6 @@ Sedan använder jag också css-moduler och dessa används i respektive fil, alte
 exporterar stilen och den kan då användas i samtliga filer.
 En global stil som kommer synas på samtliga sidor skapas och läggs till via import i App.tsx
 
-- Portal
 - HomeView
 - Image
 - Text
