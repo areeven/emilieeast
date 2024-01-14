@@ -1,0 +1,273 @@
+.container {
+	background: rgba(255, 255, 255, 0.6);
+	width: 100%;
+	padding-bottom: 1rem;
+	margin: 0 auto;
+	color: var(--light-grey);
+	text-align: center;
+	font-size: calc(8vw + 8vh + 2vmin);
+}
+
+.corridor {
+	border-radius: 50%;
+	width: 40%;
+}
+
+.pText {
+	margin: 1rem auto;
+	width: 40%;
+}
+
+@media (max-width: 1099px) {
+	.sectionOpen {
+	}
+
+	.delecsys {
+		width: 40%;
+	}
+
+	.aboutUs {
+		width: 90%;
+		margin: 1rem auto;
+		font-size: 0.8em;
+		background: rgba(51, 51, 51, 0.7);
+		border-radius: 8px;
+		padding: 1.3rem;
+		color: var(--white);
+	}
+
+	.sectionOpen {
+		width: 90%;
+		padding: 1rem;
+		margin: 2rem auto;
+		border-top: solid 2px var(--orange-color);
+		border-bottom: solid 2px var(--orange-color);
+		background: rgba(0, 0, 0, 0.7);
+		box-shadow: 2px 2px 20px 2px var(--dark-grey);
+		border-radius: 8px;
+		color: var(--white);
+	}
+
+	.luco {
+		width: 35%;
+		margin-top: 1rem;
+	}
+
+	.wegroup {
+		width: 60%;
+	}
+
+	.hisingen {
+		width: 80%;
+	}
+
+	.pText {
+	}
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+	.container {
+	}
+
+	.delecsys {
+		display: none;
+	}
+
+	.aboutUs {
+		width: 50%;
+		margin: 1rem auto;
+		font-size: 0.8em;
+		background: rgba(51, 51, 51, 0.7);
+		border-radius: 8px;
+		padding: 1.3rem;
+		color: var(--white);
+	}
+
+	.sectionOpen {
+		width: 90%;
+		padding: 1rem;
+		margin: 2rem auto;
+		border-top: solid 2px var(--orange-color);
+		border-bottom: solid 2px var(--orange-color);
+		background: rgba(0, 0, 0, 0.7);
+		box-shadow: 2px 2px 20px 2px var(--dark-grey);
+		border-radius: 8px;
+		color: var(--white);
+	}
+
+	.luco {
+		width: 35%;
+		margin-top: 1rem;
+	}
+
+	.wegroup {
+		width: 60%;
+	}
+
+	.hisingen {
+		width: 80%;
+	}
+
+	.pText {
+	}
+}
+
+@media (min-width: 1301px) and (max-width: 1440px) {
+	.sectionOpen {
+	}
+
+	.delecsys {
+		width: 90%;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.sectionOpen {
+		width: 60%;
+		padding: 1rem;
+		margin: 2rem auto;
+		border-top: solid 2px var(--orange-color);
+		border-bottom: solid 2px var(--orange-color);
+		background: rgba(0, 0, 0, 0.7);
+		box-shadow: 2px 2px 20px 2px var(--dark-grey);
+		border-radius: 8px;
+		color: var(--white);
+	}
+
+	.aboutUs {
+		background: rgba(51, 51, 51, 0);
+		color: var(--white);
+		width: 20%;
+		padding: 2rem;
+		position: absolute;
+		border-radius: 8px;
+		top: 32%;
+		left: 40%;
+	}
+
+	.aboutUs:hover {
+		background: rgba(51, 51, 51, 0.8);
+		transition: 1s;
+	}
+
+	.luco {
+		margin: 1rem;
+		width: 12%;
+	}
+
+	.wegroup {
+		margin: 1rem;
+		width: 26%;
+	}
+
+	.hisingen {
+		margin: 1rem;
+		width: 26%;
+	}
+
+	.pText {
+	}
+}
+
+@media (min-width: 1441px) {
+	.articleTwo {
+		margin-top: 4rem;
+		width: 100%;
+	}
+
+	.logo {
+		display: none;
+	}
+
+	.delecsys {
+		width: 90%;
+	}
+
+	.sectionOpen:nth-child(odd) {
+		width: 70%;
+		padding: 1rem;
+		margin: 3rem auto;
+		border-top: solid 2px var(--orange-color);
+		border-bottom: solid 2px var(--orange-color);
+		background: rgba(0, 0, 0, 0.7);
+		box-shadow: 2px 2px 20px 2px var(--dark-grey);
+		border-radius: 8px;
+		color: var(--white);
+	}
+
+	.aboutUs {
+		background: rgba(51, 51, 51, 0);
+		color: var(--white);
+		width: 20%;
+		padding: 2rem;
+		position: absolute;
+		border-radius: 8px;
+		top: 35%;
+		left: 40%;
+	}
+
+	.aboutUs:hover {
+		background: rgba(51, 51, 51, 0.8);
+		transition: 1s;
+	}
+
+	.textP {
+		margin: 2rem 0;
+		border-bottom: var(--orange-color);
+	}
+
+	.luco {
+		margin: 1rem;
+	}
+
+	.wegroup {
+		margin: 1rem;
+		width: 30%;
+	}
+
+	.hisingen {
+		margin: 1rem;
+		width: 40%;
+	}
+
+	.corridor {
+		box-shadow: 4px 4px 20px 4px;
+		margin: 1rem auto;
+	}
+
+	.imageSection {
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(1, 2fr);
+		grid-template-rows: repeat(1, 1fr);
+	}
+
+	.pText {
+	}
+}
+
+@media (min-width: 1921px) {
+	body {
+		max-width: 1920px;
+		margin: 0 auto;
+	}
+
+	.pText {
+	}
+
+	.aboutUs {
+		position: absolute;
+		top: 22%;
+		left: 42.8%;
+		width: 15%;
+	}
+
+	.sectionOpen {
+	}
+
+	.delecsys {
+		width: 90%;
+	}
+}

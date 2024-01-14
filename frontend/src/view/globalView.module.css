@@ -1,0 +1,36 @@
+.wrapper {
+	width: 80%;
+	background: rgba(255, 255, 255, 0.7);
+	margin: 0 auto;
+	padding-bottom: 2em;
+	color: var(--dark-grey);
+	font-size: calc(4vw + 4vh + 2vmin);
+}
+
+.container {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.6);
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	color: var(--dark-grey);
+	padding-bottom: 1rem;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.top {
+	width: 80vw;
+	background: var(--light-grey);
+	height: 5vh;
+}
+
+@media (min-width: 1440px) {
+	.top {
+		display: none;
+	}
+
+	.wrapper {
+		padding-top: 15rem;
+		height: 95vh;
+	}
+}

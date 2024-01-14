@@ -1,0 +1,76 @@
+.nav {
+	background: var(--light-grey);
+	width: 70%;
+	height: 100%;
+	float: right;
+	padding-top: 10rem;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.ulElement {
+	position: fixed;
+	right: -9rem;
+}
+
+.instagram {
+	width: 30px;
+	position: absolute;
+	right: 200px;
+	margin: 1rem;
+}
+
+.linkedin {
+	width: 30px;
+	position: absolute;
+	right: 250px;
+	top: 0;
+	margin: 1rem;
+}
+
+.facebook {
+	width: 30px;
+	position: absolute;
+	right: 300px;
+	top: 0;
+	margin: 1rem;
+	border-radius: 4px;
+}
+
+.listStyle {
+	display: block;
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+	.listItem {
+		font-size: 3em;
+	}
+
+	.ulElement {
+		transform: scale(2);
+		right: -7rem;
+		top: 60rem;
+	}
+}
+
+@media (min-width: 1448px) {
+	.nav {
+		display: none;
+	}
+}
+
+.listItem {
+	display: block;
+	padding: 0.5em;
+	border-bottom: solid 2px var(--orange-color);
+	width: 70%;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: var(--white);
+	text-align: center;
+}

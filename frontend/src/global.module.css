@@ -1,0 +1,125 @@
+:root {
+	--orange-color: #e63946;
+	--blue-color: #0d00a4;
+	--dark-grey: #222222;
+	--light-grey: #333333;
+	--white: #ffffff;
+	--purple: #801ba9;
+	--creamy-white: #eeeeee;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'bookman old style';
+	src:
+		local('BOOKOS'),
+		url('./shared/fonts/BOOKOS.TTF') format('ttf');
+}
+
+body {
+	background-image: url('shared/images/background/wavy-background.jpg');
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 1439px) {
+	body {
+		background-image: url('shared/images/background/wavy-background.jpg');
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (min-width: 1921px) {
+	body {
+		background-image: url('shared/images/background/too-big.png');
+		background-attachment: fixed;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+}
+
+@media (max-width: 1300px) {
+	p {
+		font-size: 0.6em;
+	}
+}
+
+.AppWindow {
+	margin: 0 auto;
+	padding: 0;
+	width: 80%;
+	color: var(--white);
+}
+
+.image {
+	width: 100%;
+	text-align: center;
+}
+
+@media (min-width: 1440px) {
+	.loading {
+		text-align: center;
+		margin-top: 30vh;
+	}
+
+	.loadH {
+		text-align: center;
+		padding-top: 6.5rem;
+	}
+
+	.headerImg {
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.headerImg img {
+		margin: 0 auto;
+	}
+
+	body::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+		opacity: 0;
+	}
+
+	body::-webkit-scrollbar-thumb {
+		background-color: var(--light-grey);
+		border-radius: 5px;
+	}
+
+	body::-webkit-scrollbar-track {
+		background-color: var(--creamy-white);
+	}
+
+	body::-webkit-scrollbar-button {
+		height: 8px;
+		border: 1px solid var(--white);
+		background-color: var(--dark-grey);
+	}
+
+	body::-webkit-scrollbar-button:single-button:vertical:decrement {
+		border-width: 0 6px 6px 6px;
+		border-color: transparent transparent var(--creamy-white) transparent;
+	}
+
+	::-webkit-scrollbar-button:vertical:single-button:decrement:hover {
+		border-color: transparent transparent var(--orange-color) transparent;
+	}
+
+	body::-webkit-scrollbar-button:single-button:vertical:increment {
+		border-width: 6px 6px 0 6px;
+		border-color: var(--creamy-white) transparent transparent transparent;
+	}
+
+	::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+		border-color: var(--orange-color) transparent transparent transparent;
+	}
+}
