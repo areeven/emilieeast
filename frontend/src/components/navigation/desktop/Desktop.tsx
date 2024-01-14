@@ -1,11 +1,10 @@
-import navigationStyle from './Desktop.module.css'
-import { Link } from 'react-router-dom'
-import RoutingPath from '../../../routes/RoutingPath'
-import { FaNetworkWired, FaBriefcase } from 'react-icons/fa'
-import { MdHomeFilled } from 'react-icons/md'
-import { RiTeamFill } from 'react-icons/ri'
-import Instagram from '../../../shared/images/links/instagram.png'
-import LinkedIn from '../../../shared/images/links/linkedin.png'
+import navigationStyle from './Desktop.module.css';
+import { Link } from 'react-router-dom';
+import RoutingPath from '../../../routes/RoutingPath';
+import { FaNetworkWired, FaBriefcase, FaList } from 'react-icons/fa';
+import { MdHomeFilled, MdContactMail } from 'react-icons/md';
+import Instagram from '../../../shared/images/links/instagram.png';
+import LinkedIn from '../../../shared/images/links/linkedin.png';
 
 function Desktop() {
 	return (
@@ -20,19 +19,25 @@ function Desktop() {
 				<Link to={RoutingPath.portfolioView}>
 					<li className={navigationStyle.listItem}>
 						<FaBriefcase />
-						<p className={navigationStyle.paragraph}>Portfolio</p>
+						<p className={navigationStyle.paragraph}>portfolio</p>
+					</li>
+				</Link>
+				<Link to={RoutingPath.teamView}>
+					<li className={navigationStyle.listItem}>
+						<FaList />
+						<p className={navigationStyle.paragraph}>listor</p>
 					</li>
 				</Link>
 				<Link to={RoutingPath.aboutView}>
 					<li className={navigationStyle.listItem}>
 						<FaNetworkWired />
-						<p className={navigationStyle.paragraph}>vår process</p>
+						<p className={navigationStyle.paragraph}>om</p>
 					</li>
 				</Link>
-				<Link to={RoutingPath.teamView}>
+				<Link to={RoutingPath.contactView}>
 					<li className={navigationStyle.listItem}>
-						<RiTeamFill />
-						<p className={navigationStyle.paragraph}>team</p>
+						<MdContactMail />
+						<p className={navigationStyle.paragraph}>kontakt</p>
 					</li>
 				</Link>
 				<li>
@@ -65,7 +70,7 @@ function Desktop() {
 				</li>
 			</ul>
 		</nav>
-	)
+	);
 }
 
-export default Desktop
+export default Desktop;

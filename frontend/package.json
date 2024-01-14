@@ -57,7 +57,7 @@
 		"singleQuote": true,
 		"tabWidth": 2,
 		"useTabs": true,
-		"semi": false,
+		"semi": true,
 		"overrides": [
 			{
 				"files": "*.ts && *.tsx",

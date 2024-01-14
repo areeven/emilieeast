@@ -1,7 +1,7 @@
-import serviceStyle from './Services.module.css'
-import globalStyle from '../globalView.module.css'
-import Solution from '../../shared/images/solutions/we-help-you.jpg'
-import { motion } from 'framer-motion'
+import serviceStyle from './Portfolio.module.css';
+import globalStyle from '../globalView.module.css';
+import Solution from '../../shared/images/solutions/we-help-you.jpg';
+import { motion } from 'framer-motion';
 
 function PortfolioView() {
 	return (
@@ -30,7 +30,7 @@ function PortfolioView() {
 				</article>
 			</motion.div>
 		</div>
-	)
+	);
 }
 
-export default PortfolioView
+export default PortfolioView;

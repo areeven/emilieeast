@@ -9,6 +9,6 @@ const RoutePath = {
 	notFoundView: '/404',
 	receivedView: '/tack',
 	teamView: '/team',
-}
+};
 
-export default RoutePath
+export default RoutePath;

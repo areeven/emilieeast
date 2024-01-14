@@ -6,7 +6,7 @@
 	padding-bottom: 1rem;
 }
 
-.employees {
+.inputContainer {
 	text-align: center;
 	color: var(--white);
 	width: 100%;
@@ -18,8 +18,14 @@
 	border-radius: 8px;
 }
 
+.inputField {
+	line-height: 40px;
+	font-size: 16px;
+	padding: 4px;
+}
+
 @media (max-width: 1100px) {
-	.employees {
+	.inputContainer {
 		width: 95%;
 		margin: 0 auto;
 	}
@@ -52,7 +58,7 @@
 }
 
 @media (min-width: 1300px) {
-	.employees {
+	.inputContainer {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		width: 80%;

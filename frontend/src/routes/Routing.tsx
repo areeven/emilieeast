@@ -1,14 +1,16 @@
-import React, { Suspense } from 'react'
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import RoutingPath from './RoutingPath'
+import React, { Suspense } from 'react';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import RoutingPath from './RoutingPath';
 
-const HomeView = React.lazy(() => import('../view/home/HomeView'))
-const PortfolioView = React.lazy(() => import('../view/services/PortfolioView'))
-const AboutView = React.lazy(() => import('../view/process/AboutView'))
-const ContactView = React.lazy(() => import('../view/contact/ContactView'))
-const ReceivedView = React.lazy(() => import('../view/received/ReceivedView'))
-const NotFoundView = React.lazy(() => import('../view/notfound/NotFoundView'))
-const TeamView = React.lazy(() => import('../view/team/TeamView'))
+const HomeView = React.lazy(() => import('../view/home/HomeView'));
+const PortfolioView = React.lazy(
+	() => import('../view/portfolio/PortfolioView'),
+);
+const AboutView = React.lazy(() => import('../view/process/AboutView'));
+const ContactView = React.lazy(() => import('../view/contact/ContactView'));
+const ReceivedView = React.lazy(() => import('../view/received/ReceivedView'));
+const NotFoundView = React.lazy(() => import('../view/notfound/NotFoundView'));
+const ListView = React.lazy(() => import('../view/team/ListView'));
 
 function RoutePath(props: { children?: React.ReactChild }) {
 	return (
@@ -25,12 +27,12 @@ function RoutePath(props: { children?: React.ReactChild }) {
 					<Route path={RoutingPath.aboutView} element={<AboutView />} />
 					<Route path={RoutingPath.contactView} element={<ContactView />} />
 					<Route path={RoutingPath.receivedView} element={<ReceivedView />} />
-					<Route path={RoutingPath.teamView} element={<TeamView />} />
+					<Route path={RoutingPath.teamView} element={<ListView />} />
 					<Route path={RoutingPath.notFoundView} element={<NotFoundView />} />
 				</Routes>
 			</Suspense>
 		</BrowserRouter>
-	)
+	);
 }
 
-export default RoutePath
+export default RoutePath;
