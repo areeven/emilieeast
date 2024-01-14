@@ -1,6 +1,7 @@
-import homeStyle from './Home.module.css'
-import { motion } from 'framer-motion'
-import globalStyle from '../globalView.module.css'
+import homeStyle from './Home.module.css';
+import { motion } from 'framer-motion';
+import globalStyle from '../globalView.module.css';
+import emilieeast from '../../shared/images/homeImages/emilieeast.png';
 
 const HomeView = () => {
 	return (
@@ -11,6 +12,8 @@ const HomeView = () => {
 				transition={{ duration: 1.2 }}
 			>
 				<article className={homeStyle.articleTwo}>
+					<img src={emilieeast} className={homeStyle.homeImage} alt="" />
+					<br />
 					<section className={homeStyle.sectionOpen}>
 						<h1>Emilie Öst</h1>
 						<p>
@@ -53,7 +56,7 @@ const HomeView = () => {
 				</article>
 			</motion.div>
 		</div>
-	)
-}
+	);
+};
 
-export default HomeView
+export default HomeView;

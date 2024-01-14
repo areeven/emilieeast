@@ -39,7 +39,7 @@ body {
 
 @media (min-width: 1921px) {
 	body {
-		background-image: url('shared/images/background/too-big.png');
+		background-image: url('shared/images/background/wavy-background.jpg');
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
