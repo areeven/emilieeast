@@ -1,23 +1,21 @@
-import { Link } from 'react-router-dom'
-import RoutingPath from '../../../routes/RoutingPath'
-import mobileStyle from './Mobile.module.css'
-import Portal from '../portal/Portal'
-import { useRef, useState } from 'react'
-import Hamburger from './hamburger/Hamburger'
-import Instagram from '../../../shared/images/links/instagram.png'
-import LinkedIn from '../../../shared/images/links/linkedin.png'
+import { Link } from 'react-router-dom';
+import RoutingPath from '../../../routes/RoutingPath';
+import mobileStyle from './Mobile.module.css';
+import { useRef, useState } from 'react';
+import Hamburger from './hamburger/Hamburger';
+import Instagram from '../../../shared/images/links/instagram.png';
+import LinkedIn from '../../../shared/images/links/linkedin.png';
 
 const Mobile = () => {
-	const [open, setOpen] = useState(false)
-	const onClick = () => setOpen(!open)
-	const node = useRef<HTMLDivElement>(null)
-	const close = () => setOpen(false)
+	const [open, setOpen] = useState(false);
+	const onClick = () => setOpen(!open);
+	const node = useRef<HTMLDivElement>(null);
+	const close = () => setOpen(false);
 
 	const showMenu = () => {
 		if (open) {
 			return (
 				<nav className={mobileStyle.nav}>
-					<Portal />
 					<ul className={mobileStyle.ulItem}>
 						<Link className={mobileStyle.LinkItem} to={RoutingPath.homeView}>
 							<li className={mobileStyle.listItem} onClick={() => close()}>
@@ -29,17 +27,27 @@ const Mobile = () => {
 							to={RoutingPath.portfolioView}
 						>
 							<li className={mobileStyle.listItem} onClick={() => close()}>
-								Tjänster
+								Portfolio
+							</li>
+						</Link>
+						<Link className={mobileStyle.LinkItem} to={RoutingPath.bloggView}>
+							<li className={mobileStyle.listItem} onClick={() => close()}>
+								Blogg
+							</li>
+						</Link>
+						<Link className={mobileStyle.LinkItem} to={RoutingPath.listView}>
+							<li className={mobileStyle.listItem} onClick={() => close()}>
+								Listor
 							</li>
 						</Link>
 						<Link className={mobileStyle.LinkItem} to={RoutingPath.aboutView}>
 							<li className={mobileStyle.listItem} onClick={() => close()}>
-								Vår Process
+								Om
 							</li>
 						</Link>
-						<Link className={mobileStyle.LinkItem} to={RoutingPath.teamView}>
+						<Link className={mobileStyle.LinkItem} to={RoutingPath.contactView}>
 							<li className={mobileStyle.listItem} onClick={() => close()}>
-								Team
+								Kontakt
 							</li>
 						</Link>
 					</ul>
@@ -72,16 +80,16 @@ const Mobile = () => {
 						</li>
 					</ul>
 				</nav>
-			)
+			);
 		}
-	}
+	};
 
 	return (
 		<div ref={node}>
 			{showMenu()}
 			<Hamburger open={open} onClick={onClick} />
 		</div>
-	)
-}
+	);
+};
 
-export default Mobile
+export default Mobile;

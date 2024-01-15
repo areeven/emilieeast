@@ -1,7 +1,7 @@
 import navigationStyle from './Desktop.module.css';
 import { Link } from 'react-router-dom';
 import RoutingPath from '../../../routes/RoutingPath';
-import { FaNetworkWired, FaBriefcase, FaList } from 'react-icons/fa';
+import { FaBriefcase, FaList, FaBloggerB, FaInfo } from 'react-icons/fa';
 import { MdHomeFilled, MdContactMail } from 'react-icons/md';
 import Instagram from '../../../shared/images/links/instagram.png';
 import LinkedIn from '../../../shared/images/links/linkedin.png';
@@ -22,7 +22,13 @@ function Desktop() {
 						<p className={navigationStyle.paragraph}>portfolio</p>
 					</li>
 				</Link>
-				<Link to={RoutingPath.teamView}>
+				<Link to={RoutingPath.bloggView}>
+					<li className={navigationStyle.listItem}>
+						<FaBloggerB />
+						<p className={navigationStyle.paragraph}>blogg</p>
+					</li>
+				</Link>
+				<Link to={RoutingPath.listView}>
 					<li className={navigationStyle.listItem}>
 						<FaList />
 						<p className={navigationStyle.paragraph}>listor</p>
@@ -30,7 +36,7 @@ function Desktop() {
 				</Link>
 				<Link to={RoutingPath.aboutView}>
 					<li className={navigationStyle.listItem}>
-						<FaNetworkWired />
+						<FaInfo />
 						<p className={navigationStyle.paragraph}>om</p>
 					</li>
 				</Link>

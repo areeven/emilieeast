@@ -1,4 +1,4 @@
-import footerStyle from './Footer.module.css'
+import footerStyle from './Footer.module.css';
 
 const Footer = () => {
 	return (
@@ -12,12 +12,12 @@ const Footer = () => {
 				</article>
 				<article className={footerStyle.articleStyleThree}>
 					<p className={footerStyle.emilie}>
-						&copy; Designed by Emilie Öst 2022 - React with TypeScript
+						&copy; Designed by Emilie Öst 2024 - React with TypeScript
 					</p>
 				</article>
 			</section>
 		</div>
-	)
-}
+	);
+};
 
-export default Footer
+export default Footer;
