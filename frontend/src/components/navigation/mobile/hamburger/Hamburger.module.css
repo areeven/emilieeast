@@ -21,13 +21,13 @@
 @media (max-width: 1440px) {
 	.wrapperOpened {
 		position: fixed;
-		right: 5vw;
-		bottom: 7vw;
+		right: 16px;
+		bottom: 16px;
 		width: 3rem;
 		height: 3rem;
-		padding: 0.5rem;
-		background: rgba(34, 34, 34, 0.8);
-		border-radius: 8px;
+		background: rgba(255, 255, 255, 0.4);
+		padding: 8px;
+		border-radius: 50%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -59,7 +59,7 @@
 		width: 2rem;
 		height: 0.25rem;
 		border-radius: 10px;
-		background-color: var(--white);
+		background-color: var(--orange-color);
 	}
 
 	.burgerOpened {
